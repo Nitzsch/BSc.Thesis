@@ -45,7 +45,7 @@ Zugleich wird ein Python Framework entwickelt, welches ein solides Gerüst für 
 
 \section{Methodik und Beschränkungen}
 
-Durch Analyse der vorhandenen Hardware sollen Lücken im Funktionsumfang ausgebessert und der Roboter befähigt werden, eine moderne SLAM-Implementation (Self-Lokalization and Mapping) autonom auszuführen. 
+Durch Analyse der vorhandenen Hardware sollen Lücken im Funktionsumfang ausgebessert und der Roboter befähigt werden, eine moderne SLAM-Implementation (Simultainous Self-Lokalization and Mapping) autonom auszuführen. 
 Dabei müssen die beschränkte Genauigkeit kostengünstiger Sensorik beachtet werden. Weiterhin soll die Modernisierung ein Budget von 100Euro für neue Hardware nicht übersteigen. 
 
 \section{Gliederung und Aufbau}
@@ -94,7 +94,7 @@ Die wichtigsten Eigenschaften eines Roboter-Frameworks sind somit :
 
 Klassische Merkmale moderner Betriebssysteme, wie ein User-Interface, Daten-Manager oder Ausführbarkeit von 3D-Visualisierungen sind in der Robotik kein Thema. 
 
-\section{SLAM - Self-Lokalization and Mapping }
+\section{SLAM - Simultainous Self-Lokalization and Mapping }
 Die Grundlage der jeder Interaktion mit seiner Umwelt stellt beim Mobilen Roboter seine Karte dar. Der Roboter bewegt sich innerhalb seiner Umwelt und muss dabei jederzeit wissen wo er sich befindet und wie er zu einem Bezugspunkt ausgerichtet ist. \\
 Mit Hilfe seiner Karte und seiner Ausrichtung kann nun der Roboter sich in seiner Umwelt bewegen, bestimmte Ziele ansteuern und Aufgaben erledigen. Startet der Roboter in einem unbekannten Umfeld, so muss er diese Karte selbstständig generieren. Dieser Prozess wird als SLAM bezeichnet. Dabei erkundet der Roboter den Raum, erfasst die wichtigsten Umwelt-Daten und hält seine veränderte Position zu jedem Zeitpunkt fest. \\
 Dies wird häufig als Henne-Ei-Problem bezeichnet, da der Roboter weder die Umgebung kennt noch seine Position in dieser und trotzdem beide Parameter schätzend berechnen muss. \\
@@ -224,6 +224,154 @@ In diesem Kapitel wird die vorhandene Hardware analysiert und Verbesserungspoten
 
 \appendix
 \chapter{Anhang}
+\section{Baupläne}
+\subsection{obere Platte}
+\includegraphics[angle=90,origin=c, scale= 0.5]{images/Zeichnung_obere_Platte.jpg}
+\subsection{Mittlere Platte}
+\includegraphics[angle=90,origin=c, scale= 0.7]{images/Zeichnung_mittlere_Platte.jpg}
+\subsection{Bodenplatte}
+%\includegraphics[angle=90,origin=c, scale= 0.7]{images/Zeichnung_Bodenplatte.jpg}
+\subsection{Akku-Träger}
+\includegraphics[angle=90,origin=c, scale= 0.7]{images/Zeichnung_Akku.jpg}
+\subsection{PCB-Layout}
+\includegraphics[angle=0,origin=c, scale= 0.75]{images/Layout.png}
+\subsection{PCB-Bestückung}
+\includegraphics[angle=90,origin=c, scale= 0.7]{images/PCB-Layout.jpg}
+
+\section{Pin-Belegung}
+\subsection{Pinbelegung an der Pi}
+Die Pinbelegung orientiert sich an der physischen Verteilung der Pins auf der Pi (BCM-Layout). Vorsicht: Hier wird BCM genutzt, die Python Scripts verwenden jedoch BOARD-Layout. \\
+Von 24 frei programmierbaren Pins sind 17 in Benutzung, davon 2 für I2C-Kommunikation. 
+
+\begin{center}
+	\begin{tabular}{|cc|c|c|}
+		\hline
+		Pin 	&BCM		& Function 		& Bauteil\\
+		\hline
+		2		&3			& I2C - SDA		& ADC , Gyro, MCP23017 (daran LCD, Buttons) \\
+		3 		&5			& I2C - SCL		& ADC , Gyro, MCP23017 (daran LCD, Buttons)\\
+		4		&7			& Freier Pin	& Ultraschall-Dist-Sens Rechts ECHO\\
+		17		&11 		& Freier Pin	& Ultraschall-Dist-Sens Rechts TRIG	\\
+		27		&13 		& Freier Pin	& Ultraschall-Dist-Sens Front ECHO	\\
+		22		&15 		& Freier Pin	& Ultraschall-Dist-Sens Front TRIG	\\
+		10		&19 		& SPI0 - MI		& 	\\
+		9		&21 		& SPI0 - MO		& Button		\\
+		11		&23 		& SPI0 - CL		& Wheel-Encoder Rechts		\\
+		5		&29 		& Freier Pin	& Ultraschall-Dist-Sens Links ECHO		\\
+		6		&31 		& Freier Pin	& Ultraschall-Dist-Sens Links TRIG	\\
+		13		&33 		& Freier Pin	& Mouse-Sensor Data	\\	
+		19		&35 		& Freier Pin	& Mouse-Sensor Clock	\\
+		26		&37 		& Freier Pin	& Status LED\\
+		14		&8 			& UART - TXD	& 	\\
+		15		&10 		& UART - RXD	&  	\\
+		18		&12 		& Freier Pin	& 	\\
+		23 		&16 		& Freier Pin	& Motor-Chip Pin 15 - Driver-In0 for Mot2	\\
+		24		&18 		& Freier Pin	& Motor-Chip Pin 10- Driver-In1 for Mot2	\\
+		25		&22 		& Freier Pin	& Motor-Chip Pin 9 - EN for Mot2	\\
+		8		&24 		& SPI0 - CE		& 	\\
+		7		&26 		& SPI1 - CE		&  	\\
+		12		&32 		& Freier Pin	& Wheel-Encoder Links	\\
+		16		&36 		& Freier Pin	& Motor-Chip Pin 7 - Driver-In1 for Mot1	\\
+		20		&38 		& SPI1 - MO		& Motor-Chip Pin 2 - Driver-In0 for Mot1		\\
+		21		&40 		& SPI1	- CL	& Motor-Chip Pin 1 - EN for Mot1	\\
+		\hline
+	\end{tabular}
+\end{center}
+\newpage
+
+\subsection{Pinbelegung am MCP}
+Die Zählung beginnt am ersten Pin auf der oberen Seite, links. Der erste "freie" Pin ab den Funktions-Pins trägt somit die 1. danach ist die obere Seite belegt bis 8 und dann wird umgehend gezählt. Damit ist der Pin 9 der Pin auf der unteren Seite, ganz rechts und Pin 16 der Pin in der Mitte auf der unteren Seite. 
+
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		Pin 	& Bauteil\\
+		\hline
+		1		&  \\
+		2 		& \\
+		3		& \\
+		4		& 	\\
+		5		& 	\\
+		6		& 	\\
+		7		& Cliff-Sensor links\\
+		8		& Cliff-Sensor rrechts\\
+		9		& LCD D7		\\
+		10		& LCD D6 	\\
+		11		& LCD D5		\\
+		12		& LCD D4	\\
+		13		& LCD E	\\	
+		14		& LCD RS	\\
+		15		& 	\\
+		16		& 		\\
+		\hline
+	\end{tabular}
+\end{center}
+
+\subsection{Pinbelegung am AD-Converter}
+Pinbelegung wie Aufdruck auf Bauteil, dh. von 0-3, starten ab Mitte.
+
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		Pin 	& Bauteil\\
+		\hline
+		0		& 	\\
+		1		&  \\
+		2 		& IF-Sensor rechts\\
+		3		& IF-Sensor links\\
+		\hline
+	\end{tabular}
+\end{center}
+
+\chapter{Installationsanleitung}
+Nachdem die Hardware des Roboters fertiggestellt wurde, muss die Software installiert werden. Dies geschieht durch Installation einer Rasbian Version und dem Einrichten dieser, gefolgt von der Installation versch. Python Bibliotheken und dem Framework selbst. 
+\section{Raspbian}
+Raspbian ist eine speziell für die Raspberry Pi zugeschnittene Linux Variante. Grob baut Sie auf Ubuntu auf und verzichtet auf einige der großen Programme und Treiber, insb. jener für Grafik. \\
+Raspbian lässt sich entweder direkt auf einer SD-Karte fertig installiert kaufen oder auf der offiziellen Website\\ \url{https://www.raspberrypi.org/downloads/raspbian/}\footnote{Abgerufen am 01.07.2019 um 14:00 Uhr}
+herunterladen. Für ungeübter User empfiehlt sich hierbei die Noobs Version, welche die neueste Raspbian Version einfach zur Verfügung stellt. Für eine genaue Installationsanleitung empfiehlt sich hier das Einsteiger-Forum von Raspbian \url{https://www.raspberrypi.org/documentation/installation/installing-images/README.md}\footnote{Abgerufen am 01.07.2019 um 14:00 Uhr}
+.
+
+\subsection{Raspbian einrichten}
+Beim grundsätzlichen Einrichten des Betriebssystem sollte man der Einleitung im oben genannten Link folgen. Es sollte aber auf jeden Fall der Nutzername und das zugehörige Passwort geändert werden. Dies kann über die Konsole mit dem Befehl 'raspi-config' geschehen. \\
+
+\subsection{I2C und Kamera}
+Es muss die Kamera und der I2C-Kanal aktiviert werden. Dies geschieht im Terminal mit dem Befehl 'sudo raspi-config'. Danach öffnet sich ein Konfigurationsfenster. Hier muss unter der Punkt Interface-Optionen ausgewählt werden. In diesem Unterpunkt findet man die Menüs zu I2C und Kamera. Diese jeweils aktivieren und bestätigen. Die Pi muss danach neu gestartet werden. 
+
+\subsection{VNC-Server}
+Danach sollte ein VNC-Server installiert werden um Zugriff auf die Pi zu erhalten. Eine gute Anleitung findet sich auch wieder auf der offiziellen Website der Pi Foundation:\\
+\url{https://www.raspberrypi.org/documentation/remote-access/vnc/}\footnote{Abgerufen am 01.07.2019 um 14:00 Uhr}
+
+
+\subsection{WLan-Access-Point}
+Ein WLan-Access-Point erleichtert den Zugriff auf die Pi. Diese stellt fortan ein WLan zur Verfügung auf das jedes externe Gerät zugreifen kann. \\
+Eine Anleitung hierzu findet sich erneut auf der offizielen Seite:\\
+\url{https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md}\footnote{Abgerufen am 01.07.2019 um 14:00 Uhr}
+
+\subsection{Update and Upgrade}
+Vor und nach jeder Installation sollte im Terminal ein Update erzwungen werden. Dies passiert durch den Befehl ' sudo apt-get update' und ' sudo apt-get upgrade'. Ebenso sollte zu Beginn ein großes Update erfolgen durch den Befehl ' sudo apt-get dist-upgrade'. Nach diesen Befehlen empfiehlt sich weiterhin das Kommando ' sudo apt-get autoremove' und 'sudo apt-get autoclean' um veraltete Pakete zu entfernen. 
+
+\section{Python Bibliotheken}
+
+Für die Funktionsfähigkeit des Frameworks werden Python Bibliotheken benötigt, welche nicht in der Standartinstallation enthalten sind. Diese werden im Terminal durch den Befehl "sudo pip install (YOUR BIBLIOTHEKNAME HERE)" installiert.\\
+Folgende Pakete werden benötigt: 
+\begin{center}
+	\begin{itemize}
+		\item PIL
+		\item CV
+		\item numpy
+		\item Tkinter
+		\item smbus
+		\item Adafruit\_ADS1x15
+	\end{itemize}
+\end{center}
+Je nach verwendeter Python Version (2 oder 3) können die Installationsnamen variieren. So heißt PIL für Python2 Pillow und CV ist zu finden unter open-cv oder opencv-python. Sollte die Installation der Pakete scheitern, so empfiehlt es sich hier nachzusehen, wie die Namen für die Installation aufgelöst werden müssen. 
+
+\section{PyBot-Framework}
+Das Herzstück der Software ist das Python-Framework. Dieses lässt sich über GitHub auf die eigene Pi clonen. Die Daten findet man unter \url{https://github.com/Nitzsch/PyBot} \footnote{Abgerufen am 02.07.2019 um 15:00 Uhr}\\
+Nachdem das Framework heruntergeladen wurde, sollte die Pin-Belegung im Unterordner Drivers an den eigenen Roboter angepasst werden. Danach lässt sich über die Ausführung des Scripts View der Roboter im Nutzer-Interface starten und steuern. \\
+Beim Ausprobieren wünscht der Autor viel Spaß und Erfolg. 
+
+
 
 \bibliographystyle{alpha}
 \bibliography{bibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.4)  3 JUL 2019 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.4)  4 JUL 2019 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -781,11 +781,11 @@ f>] [2
 
 ] [7] [8
 
-] (./bsc_thesis.toc)
+] (./bsc_thesis.toc [9])
 \tf@toc=\write3
 \openout3 = `bsc_thesis.toc'.
 
- [9]
+ [10]
 Kapitel 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
@@ -830,6 +830,11 @@ LaTeX Font Info:    Try loading font information for TS1+pxr on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/ts1pxr.fd
 File: ts1pxr.fd 2000/12/14 v1.0
 )
+Overfull \hbox (6.94687pt too wide) in paragraph at lines 97--97
+[]\T1/pxr/bx/n/14.4 SLAM - Si-mul-tai-nous Self-Lokalization and Map-
+ []
+
+
 Underfull \vbox (badness 6396) has occurred while \output is active []
 
  [5]
@@ -852,19 +857,123 @@ Kapitel 4.
 
 ]
 Anhang A.
-(./bsc_thesis.bbl [13] [14
+<images/Zeichnung_obere_Platte.jpg, id=100, 845.27559pt x 597.2903pt>
+File: images/Zeichnung_obere_Platte.jpg Graphic file (type jpg)
+<use images/Zeichnung_obere_Platte.jpg>
+Package pdftex.def Info: images/Zeichnung_obere_Platte.jpg  used on input line 
+229.
+(pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Overfull \vbox (75.55469pt too high) has occurred while \output is active []
+
+
+[14 <./images/Zeichnung_obere_Platte.jpg>]
+<images/Zeichnung_mittlere_Platte.jpg, id=107, 845.27559pt x 597.2903pt>
+File: images/Zeichnung_mittlere_Platte.jpg Graphic file (type jpg)
+<use images/Zeichnung_mittlere_Platte.jpg>
+Package pdftex.def Info: images/Zeichnung_mittlere_Platte.jpg  used on input li
+ne 231.
+(pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
+
+Overfull \hbox (73.10036pt too wide) in paragraph at lines 231--232
+[] 
+ []
+
+
+Overfull \vbox (12.81984pt too high) has occurred while \output is active []
+
+
+[15 <./images/Zeichnung_mittlere_Platte.jpg>]
+<images/Zeichnung_Akku.jpg, id=112, 845.27559pt x 597.2903pt>
+File: images/Zeichnung_Akku.jpg Graphic file (type jpg)
+<use images/Zeichnung_Akku.jpg>
+Package pdftex.def Info: images/Zeichnung_Akku.jpg  used on input line 235.
+(pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
+
+Overfull \hbox (73.10036pt too wide) in paragraph at lines 235--236
+[] 
+ []
+
+
+Overfull \vbox (42.89078pt too high) has occurred while \output is active []
+
+
+[16 <./images/Zeichnung_Akku.jpg>]
+<images/Layout.png, id=116, 642.2394pt x 644.1666pt>
+File: images/Layout.png Graphic file (type png)
+<use images/Layout.png>
+Package pdftex.def Info: images/Layout.png  used on input line 237.
+(pdftex.def)             Requested size: 642.23782pt x 644.16502pt.
+
+Overfull \hbox (136.67836pt too wide) in paragraph at lines 237--238
+[] 
+ []
+
+<images/PCB-Layout.jpg, id=117, 845.27559pt x 597.2903pt>
+File: images/PCB-Layout.jpg Graphic file (type jpg)
+<use images/PCB-Layout.jpg>
+Package pdftex.def Info: images/PCB-Layout.jpg  used on input line 239.
+(pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
+
+Overfull \hbox (73.10036pt too wide) in paragraph at lines 239--240
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./images/Layout.png (PNG copy)>]
+Overfull \vbox (15.8558pt too high) has occurred while \output is active []
+
+
+[18 <./images/PCB-Layout.jpg>]
+Overfull \hbox (0.62772pt too wide) in paragraph at lines 247--279
+ [] 
+ []
+
+[19] [20]
+Anhang B.
+
+Overfull \hbox (3.04884pt too wide) in paragraph at lines 329--333
+\T1/pxtt/m/n/10 https : / / www . raspberrypi . org / downloads / raspbian/$[] 
+\T1/pxr/m/n/10 (-20) her-un-ter-la-den. Für un-
+ []
+
+
+Overfull \hbox (8.82896pt too wide) in paragraph at lines 329--333
+\T1/pxtt/m/n/10 raspberrypi . org / documentation / installation / installing-[
+]images / README .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+
+ []
+
+[21
+
+]
+Overfull \hbox (61.32881pt too wide) in paragraph at lines 346--349
+\T1/pxtt/m/n/10 https : / / www . raspberrypi . org / documentation / configura
+tion / wireless / access-[]point .
+ []
+
+[22] (./bsc_thesis.bbl [23] [24
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [15] (./bsc_thesis.aux) ) 
+) [25] (./bsc_thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 10871 strings out of 492982
- 161300 string characters out of 6134896
- 260940 words of memory out of 5000000
- 13991 multiletter control sequences out of 15000+600000
- 60162 words of font info for 241 fonts, out of 8000000 for 9000
+ 10913 strings out of 492982
+ 162150 string characters out of 6134896
+ 261940 words of memory out of 5000000
+ 14013 multiletter control sequences out of 15000+600000
+ 60753 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,11n,58p,2055b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
@@ -875,10 +984,10 @@ st/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.
 pfb>
-Output written on bsc_thesis.pdf (24 pages, 314719 bytes).
+Output written on bsc_thesis.pdf (35 pages, 1067973 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 172 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 35846 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 35871 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2.1}Hardware Mobiler Roboter}{3}
 \contentsline {section}{\numberline {2.2}Mobile Hardware und ihre Lebenszeit}{3}
 \contentsline {section}{\numberline {2.3}Software Mobile Roboter}{4}
-\contentsline {section}{\numberline {2.4}SLAM - Self-Lokalization and Mapping }{6}
+\contentsline {section}{\numberline {2.4}SLAM - Simultainous Self-Lokalization and Mapping }{6}
 \contentsline {section}{\numberline {2.5}Zusammenfassung}{7}
 \contentsline {chapter}{\numberline {3}Ct'Bot}{9}
 \contentsline {section}{\numberline {3.1}Erneuerung der Hardware}{9}
@@ -35,8 +35,8 @@
 \contentsline {subsubsection}{Grundplatte}{10}
 \contentsline {section}{\numberline {3.2}Software-Framework}{10}
 \contentsline {subsection}{\numberline {3.2.1}Python}{10}
-\contentsline {subsection}{\numberline {3.2.2}Hardware Treiber}{10}
-\contentsline {subsection}{\numberline {3.2.3}PyBot- Framework}{10}
+\contentsline {subsection}{\numberline {3.2.2}PyBot- Framework}{10}
+\contentsline {subsection}{\numberline {3.2.3}Hardware Treiber}{10}
 \contentsline {subsection}{\numberline {3.2.4}SLAM}{10}
 \contentsline {section}{\numberline {3.3}Evaluierung}{10}
 \contentsline {subsection}{\numberline {3.3.1}Testumgebung}{10}
@@ -48,3 +48,23 @@
 \contentsline {section}{\numberline {4.2}Ausblick}{11}
 \contentsline {section}{\numberline {4.3}Literaturverzeichnis}{11}
 \contentsline {chapter}{\numberline {A}Anhang}{13}
+\contentsline {section}{\numberline {A.1}Baupl\IeC {\"a}ne}{14}
+\contentsline {subsection}{\numberline {A.1.1}obere Platte}{14}
+\contentsline {subsection}{\numberline {A.1.2}Mittlere Platte}{15}
+\contentsline {subsection}{\numberline {A.1.3}Bodenplatte}{16}
+\contentsline {subsection}{\numberline {A.1.4}Akku-Tr\IeC {\"a}ger}{16}
+\contentsline {subsection}{\numberline {A.1.5}PCB-Layout}{17}
+\contentsline {subsection}{\numberline {A.1.6}PCB-Best\IeC {\"u}ckung}{18}
+\contentsline {section}{\numberline {A.2}Pin-Belegung}{19}
+\contentsline {subsection}{\numberline {A.2.1}Pinbelegung an der Pi}{19}
+\contentsline {subsection}{\numberline {A.2.2}Pinbelegung am MCP}{20}
+\contentsline {subsection}{\numberline {A.2.3}Pinbelegung am AD-Converter}{20}
+\contentsline {chapter}{\numberline {B}Installationsanleitung}{21}
+\contentsline {section}{\numberline {B.1}Raspbian}{21}
+\contentsline {subsection}{\numberline {B.1.1}Raspbian einrichten}{21}
+\contentsline {subsection}{\numberline {B.1.2}I2C und Kamera}{22}
+\contentsline {subsection}{\numberline {B.1.3}VNC-Server}{22}
+\contentsline {subsection}{\numberline {B.1.4}WLan-Access-Point}{22}
+\contentsline {subsection}{\numberline {B.1.5}Update and Upgrade}{22}
+\contentsline {section}{\numberline {B.2}Python Bibliotheken}{22}
+\contentsline {section}{\numberline {B.3}PyBot-Framework}{23}
