@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.4)  4 JUL 2019 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.4)  6 JUL 2019 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -842,152 +842,211 @@ Underfull \vbox (badness 6396) has occurred while \output is active []
 
 ]
 Kapitel 3.
+<./images/CBot_mod.jpg, id=86, 2669.975pt x 1784.6675pt>
+File: ./images/CBot_mod.jpg Graphic file (type jpg)
+<use ./images/CBot_mod.jpg>
+Package pdftex.def Info: ./images/CBot_mod.jpg  used on input line 140.
+(pdftex.def)             Requested size: 267.01314pt x 178.4772pt.
+[9]
+<images/mainboard.jpg, id=91, 2601.72pt x 1951.29pt>
+File: images/mainboard.jpg Graphic file (type jpg)
+<use images/mainboard.jpg>
+Package pdftex.def Info: images/mainboard.jpg  used on input line 147.
+(pdftex.def)             Requested size: 260.18724pt x 195.14043pt.
+ [10 <./images/CBot_mod.jpg> <./images/mainboard.jpg>]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Citation `Hofmeister' on page 11 undefined on input line 162.
 
- [9]
-Overfull \vbox (207.58817pt too high) has occurred while \output is active []
-
-
-[10]
-Kapitel 4.
-[11
-
-] [12
-
-]
-Anhang A.
-<images/Zeichnung_obere_Platte.jpg, id=100, 845.27559pt x 597.2903pt>
-File: images/Zeichnung_obere_Platte.jpg Graphic file (type jpg)
-<use images/Zeichnung_obere_Platte.jpg>
-Package pdftex.def Info: images/Zeichnung_obere_Platte.jpg  used on input line 
-229.
-(pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
+[11] [12]
+<images/Pi.jpg, id=102, 1282.7925pt x 909.3975pt>
+File: images/Pi.jpg Graphic file (type jpg)
+<use images/Pi.jpg>
+Package pdftex.def Info: images/Pi.jpg  used on input line 193.
+(pdftex.def)             Requested size: 320.69734pt x 227.34882pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-Overfull \vbox (75.55469pt too high) has occurred while \output is active []
+[14 <./images/Pi.jpg>] [15] [16] [17] [18
+
+]
+Kapitel 4.
+[19] [20
+
+]
+Anhang A.
+[21] [22
+
+]
+Anhang B.
+
+Overfull \hbox (19.58627pt too wide) in paragraph at lines 287--304
+ [] 
+ []
+
+[23]
+Overfull \hbox (18.4463pt too wide) in paragraph at lines 344--378
+ [] 
+ []
 
 
-[14 <./images/Zeichnung_obere_Platte.jpg>]
-<images/Zeichnung_mittlere_Platte.jpg, id=107, 845.27559pt x 597.2903pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+[25] [26
+
+]
+Anhang C.
+<images/Zeichnung_obere_Platte.jpg, id=148, 845.27559pt x 597.2903pt>
+File: images/Zeichnung_obere_Platte.jpg Graphic file (type jpg)
+<use images/Zeichnung_obere_Platte.jpg>
+Package pdftex.def Info: images/Zeichnung_obere_Platte.jpg  used on input line 
+399.
+(pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Overfull \vbox (48.53891pt too high) has occurred while \output is active []
+
+
+[28 <./images/Zeichnung_obere_Platte.jpg>]
+<images/Zeichnung_mittlere_Platte.jpg, id=156, 845.27559pt x 597.2903pt>
 File: images/Zeichnung_mittlere_Platte.jpg Graphic file (type jpg)
 <use images/Zeichnung_mittlere_Platte.jpg>
 Package pdftex.def Info: images/Zeichnung_mittlere_Platte.jpg  used on input li
-ne 231.
+ne 401.
 (pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
 
-Overfull \hbox (73.10036pt too wide) in paragraph at lines 231--232
+Overfull \hbox (73.10036pt too wide) in paragraph at lines 401--402
 [] 
  []
 
 
-Overfull \vbox (12.81984pt too high) has occurred while \output is active []
+Overfull \vbox (16.98062pt too high) has occurred while \output is active []
 
 
-[15 <./images/Zeichnung_mittlere_Platte.jpg>]
-<images/Zeichnung_Akku.jpg, id=112, 845.27559pt x 597.2903pt>
+[29 <./images/Zeichnung_mittlere_Platte.jpg>]
+<images/Bodenplatte.pdf, id=160, 580.1675pt x 827.09pt>
+File: images/Bodenplatte.pdf Graphic file (type pdf)
+<use images/Bodenplatte.pdf>
+Package pdftex.def Info: images/Bodenplatte.pdf  used on input line 403.
+(pdftex.def)             Requested size: 580.16606pt x 827.08797pt.
+
+Overfull \hbox (61.11447pt too wide) in paragraph at lines 403--404
+[] 
+ []
+
+
+Overfull \vbox (12.89394pt too high) has occurred while \output is active []
+
+
+[30 <./images/Bodenplatte.pdf>]
+<images/Zeichnung_Akku.jpg, id=170, 845.27559pt x 597.2903pt>
 File: images/Zeichnung_Akku.jpg Graphic file (type jpg)
 <use images/Zeichnung_Akku.jpg>
-Package pdftex.def Info: images/Zeichnung_Akku.jpg  used on input line 235.
+Package pdftex.def Info: images/Zeichnung_Akku.jpg  used on input line 405.
 (pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
 
-Overfull \hbox (73.10036pt too wide) in paragraph at lines 235--236
+Overfull \hbox (73.10036pt too wide) in paragraph at lines 405--406
 [] 
  []
 
 
-Overfull \vbox (42.89078pt too high) has occurred while \output is active []
+Overfull \vbox (20.62378pt too high) has occurred while \output is active []
 
 
-[16 <./images/Zeichnung_Akku.jpg>]
-<images/Layout.png, id=116, 642.2394pt x 644.1666pt>
+[31 <./images/Zeichnung_Akku.jpg>]
+<images/Layout.png, id=174, 642.2394pt x 644.1666pt>
 File: images/Layout.png Graphic file (type png)
 <use images/Layout.png>
-Package pdftex.def Info: images/Layout.png  used on input line 237.
+Package pdftex.def Info: images/Layout.png  used on input line 407.
 (pdftex.def)             Requested size: 642.23782pt x 644.16502pt.
 
-Overfull \hbox (136.67836pt too wide) in paragraph at lines 237--238
+Overfull \hbox (136.67836pt too wide) in paragraph at lines 407--408
 [] 
  []
 
-<images/PCB-Layout.jpg, id=117, 845.27559pt x 597.2903pt>
+<images/PCB-Layout.jpg, id=175, 845.27559pt x 597.2903pt>
 File: images/PCB-Layout.jpg Graphic file (type jpg)
 <use images/PCB-Layout.jpg>
-Package pdftex.def Info: images/PCB-Layout.jpg  used on input line 239.
+Package pdftex.def Info: images/PCB-Layout.jpg  used on input line 409.
 (pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
 
-Overfull \hbox (73.10036pt too wide) in paragraph at lines 239--240
+Overfull \hbox (73.10036pt too wide) in paragraph at lines 409--410
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./images/Layout.png (PNG copy)>]
-Overfull \vbox (15.8558pt too high) has occurred while \output is active []
+ [32 <./images/Layout.png (PNG copy)>]
+Overfull \vbox (20.62378pt too high) has occurred while \output is active []
 
 
-[18 <./images/PCB-Layout.jpg>]
-Overfull \hbox (0.62772pt too wide) in paragraph at lines 247--279
+[33 <./images/PCB-Layout.jpg>]
+Overfull \hbox (0.62772pt too wide) in paragraph at lines 417--449
  [] 
  []
 
-[19] [20]
-Anhang B.
+[34] [35] [36
 
-Overfull \hbox (3.04884pt too wide) in paragraph at lines 329--333
+]
+Anhang D.
+
+Overfull \hbox (3.04884pt too wide) in paragraph at lines 499--503
 \T1/pxtt/m/n/10 https : / / www . raspberrypi . org / downloads / raspbian/$[] 
 \T1/pxr/m/n/10 (-20) her-un-ter-la-den. Für un-
  []
 
 
-Overfull \hbox (8.82896pt too wide) in paragraph at lines 329--333
+Overfull \hbox (8.82896pt too wide) in paragraph at lines 499--503
 \T1/pxtt/m/n/10 raspberrypi . org / documentation / installation / installing-[
 ]images / README .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 
  []
 
-[21
-
-]
-Overfull \hbox (61.32881pt too wide) in paragraph at lines 346--349
+[37]
+Overfull \hbox (61.32881pt too wide) in paragraph at lines 516--519
 \T1/pxtt/m/n/10 https : / / www . raspberrypi . org / documentation / configura
 tion / wireless / access-[]point .
  []
 
-[22] (./bsc_thesis.bbl [23] [24
+[38] (./bsc_thesis.bbl [39] [40
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [25] (./bsc_thesis.aux) ) 
+) [41] (./bsc_thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 10913 strings out of 492982
- 162150 string characters out of 6134896
- 261940 words of memory out of 5000000
- 14013 multiletter control sequences out of 15000+600000
- 60753 words of font info for 250 fonts, out of 8000000 for 9000
+ 10941 strings out of 492982
+ 162664 string characters out of 6134896
+ 265940 words of memory out of 5000000
+ 14030 multiletter control sequences out of 15000+600000
+ 61147 words of font info for 256 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,58p,2055b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/rpcxr.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/pxfonts/rpxb.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/pxfonts/rpxr.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
-tino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.
-pfb>
-Output written on bsc_thesis.pdf (35 pages, 1067973 bytes).
+ 46i,12n,58p,2055b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/pxfonts/rpcxr.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/pxfonts/rpxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pxf
+onts/rpxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on bsc_thesis.pdf (51 pages, 3855818 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 239 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 35871 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 35891 words of extra memory for PDF output out of 42996 (max. 10000000)
 

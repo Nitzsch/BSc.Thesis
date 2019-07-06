@@ -135,56 +135,109 @@ Der Ct'Bot dieser Arbeit wurde im Rahmen einer Doktor-Arbeit aufgebaut. Ziel war
 In diesem Kapitel wird die vorhandene Hardware analysiert und Verbesserungspotenzial untersucht. Dabei wird abgewogen zwischen jetziger Leistungsfähigkeit und der Möglichkeit neuer Sensorik sowie dem Preis dieser. 
 
 \subsection{Vorhandene Hardware}
+Der Ct'Bot, welcher den Grundstein für diese Arbeit legt, sollte folgendermaßen aufgebaut sein:
+
+\includegraphics[scale=0.1]{CBot_mod.jpg}
+
+Die übergebene Hardware wurde auf Funktionsfähigkeit überprüft und zukünftige Einsatzfähigkeit analysiert. 
 
 \subsubsection{Hauptplatine}
+Die erste Generation des Ct'Bot wurde mit einem Atmel ATmega32 bestückt. Dieser konnte jedoch zu einem ATmega644 erweitert werden, wie es auch bei dem vorliegenden Ct'Bot der Fall ist. Der ATmega 644 arbeitet dabei mit 24 MHZ, 4kB Ram und 64kB Flash Speicher. Verbaut war der Hauptprozessor auf der mittleren Platine. Dieses wurde oft Mainboard genannt, da es die komplette Sensorik bündelte und die einzige, standartmäßig verbaute Platine war. 
+
+\includegraphics[scale=0.1]{images/mainboard.jpg}
+
+Die CPU war ausreichend um den Ct'Bot zu kontrollieren und einfache Aufgaben zu berechnen und auszuführen. Scheiterte jedoch an größeren Daten oder Karten wegen mangelnder Rechenleistung und Speicherplatz. 
 
 \subsubsection{Wheel-Encoder und Cliff-Detektoren}
+Als 'Lichtschranken' vermarktete CNY70 fungieren beim Ct-Bot als Wheel-Encoder und Cliff-Detektoren. Diese Sensoren können auf 1-2mm Distanz exakt hell-dunkel Übergänge auf einer Fläche erkennen. Dabei produzieren Sie ein analoges Ausgangssignal, welches Ansteigt auf dunklen Flächen und wieder abnimmt auf helleren. Diese Eigenschaft wird gepaart mit einer Kodierungsscheibe um die Radachse herum. Diese besteht aus eng beieinander liegenden Schwarz-Weiß-Balken. Richtet man den CNY70 danach aus, so erkennt er - bei Bewegung des Rads und der Kodierungsscheibe - die Wechsel. Diese nennt man Ticks. Ein guter Tick-Wert für ein Rad mit 3cm Durchmesser wären 200-300 Ticks. Der Ct'Bot hat 64. Diese werden mit dem CNY70 in der vorgegebenen Konstruktion kaum erreicht, da der Sensor sehr empfindlich auf Umgebungslicht reagiert und zu weit vom Rad entfernt sitzt. \\
+Das gleiche Problem ergibt sich bei den Cliff-Detektoren. Das sind CNY70-Sensoren an der vorderen Roboterseite. Sie blicken Richtung Boden und sollen erkennen, wenn der Roboter sich über einem Abgrund befindet. In diesem Fall schalten sie ebenso ein analoges Output-Signal hoch. Leider waren die Sensoren zu hoch angebracht und lieferten daher fehlerhafte Werte. 
 
 \subsubsection{Motor}
+Der Ct'-Bot wird von 2 Faulhaber 2619 SR 006 DC-Motoren bewegt. Sie werden mit 5 V betreiben. 
 
 \subsubsection{Distanzsensoren}
+Als Distanzsensoren dienen zwei Infrarot-Distanzsensoren GP2D12 von Sharp. Diese haben einen Messbereich von 10-80cm und arbeiten mit Infrarot-Strahlen. Dies ermöglicht eine Punktgenaue Messung mit zuverlässigen Werten. Jedoch sind die Sensoren anfällig gegenüber Materialoberflächen. So können gemessene Daten stark voneinander abweichen, je nachdem auf welche Fläche sie treffen. Ebenso von Nachteil ist der hohe Stromverbrauch und die fehlende Abschirmung der Sensoren. Ihre Platine ist ungeschützt und frei liegen zur Rückseite. 
 
 \subsubsection{Kompass}
+Für die Messung der Ausrichtung wurde dem Ct'Bot nachträglich ein Kompass von Devantech installiert. Der CMPS03 hat eine Genauigkeit von 3-5 Grad und misst in Bezug zum Nordpol. Die exakte Kalibrierung des Kompass ist äußert mühsam und wurde von \cite{Hofmeister} in seiner Doktorarbeit beschrieben. Ebenso hatte dieser wiederholt Probleme mit der Genauigkeit der Messungen. 
 
 \subsubsection{Optical-Flow Sensor}
-
+Als weitere Odometrie-Sensor hat der Ct'Bot einen ADNS-2610 Optical-Flow-Sensor von Avago verbaut. Der Optical-Flow-Sensor ist im hinteren Teil des Roboters verbaut und in der normalen Version zu hoch angebracht, so dass er keine Werte liefert. Wird der Sensor tiefergelegt, so misst er den Fluss von Pixeln in schnell hintereinander aufgenommen Bildern und berechnet daraus eine Veränderung der Lage. Dies funktioniert mit einer Auflösung von 0,635 mm (400 Counts Per Inch, CPI) \footnote{Siehe hierzu Datenblatt des Sensors}. Somit sehr exakt. 
 
 \subsubsection{LCD}
+Es wurde zusätzlich ein DEM20485 LCD von Ryston verbaut. Leider war dieser nicht mehr ganz funktionstüchtig. So wurde die untere Reihe nicht klar dargestellt. 
 
 \subsubsection{Kamera}
+Der Ct'Bot verfügte über ein Kamera-Modul. Diese konnte Bilder in der Auflösung von ... erstellen. Leider ist der Speicherplatz des Ct'bot hierfür nicht ausreichend, daher musste eine zusätzliche SD-Karte eingebaut werden. Diese war ebenfalls nicht vom Ct'bot direkt lesbar. Er konnte nur Speicher- und Sendebefehle ausführen, jedoch nicht darstellen oder analysieren. 
 
 \subsubsection{verschiedene Chips}
+Ein zusätliches Wlan-Modul von Lantronic ermöglichte die Kommunikation versch. Ct'Bots miteinander. Die Funktionstüchtigkeit des Moduls konnte nicht überprüft werden. \\
+Das SD-Karten-System ist ein selbstentwickeltes Modul und kann 512 Byte pro 5ms (also 0,5MB/sec, die Raspberry Pi 3 hat eine
+durchschnittliche Schreibgeschw. von 20-50MB/s, abhängig von eingesetzter Karte) schreiben. Beim Schreiben und Lesen wird auf der Karte kein Fat32 Format verwendet, sondern ein selbstgeschriebenes Format genutzt. Dies verzichtet auf einen spezielles Dateisystem und nummeriert die Blöcke einfach durch. Diese werden nun von vorne beginnend geschrieben. Ein Zugriff beginnt daher auch immer am ersten Block und iteriert bis zur gesuchten Nummer durch die ganze Karte. Große Karten verzögern daher den Zugriff enorm. Ein praktischer Nutzen für moderne Systeme ist daher nicht mehr gegeben. 
 
 \subsubsection{Grundplatte}
+Eine Aluminium-Platte mit einem Durchmesser von 12 Zentimetern bildet die Grundplatte. Der ganze Ct'Bot ist so konzipiert, dass diese Grundplatte modular Erweitert werden kann. Jedes neue Modul wird hierbei auf die Grundplatte aufgeschraubt. Dadurch wächst der Roboter immer in die Höhe und behält seine Grundform bei. Immer dabei war die erste Ebene, das Mainboard. Alle weiteren Erweiterungen waren spezielle Zukaufteile oder selbstentwickelt. 
+
+\subsubsection{Fehlende Bauteile}
+Nicht mehr vorhanden waren das Batteriefach, ein PC-Kabel (9-Poliger D-Sub-Stecker, leider kein Anschluss an moderne Rechner möglich da dies ein überholtes Format ist), die Fernbedienung und der Ultraschall-Distanzssensor. 
 
 \subsection{Neue Hardware}
+In diesem Abschnitt wird die neue Hardware vorgestellt mit einer kurzen Begründung warum diese ausgewählt wurde. 
 
 \subsubsection{Hauptplatine}
+Der bisherige CPU wird für die künftigen Aufgaben nicht leistungsstark genug sein. Als Alternative würde sich erneut ein ATmega anbieten, wie z.B. der ATmega328P. Dieser ist auf dem Arduino Uno verbaut und kostet als Einplatinen-Computer 20Euro. Er bietet die Möglichkeit digitale und analoge Pins anzusteuern und hat eine ausreichend starke Rechenleistung. Jedoch ist hier, ebenso wie bisher, der Speicherplatz mit 32kB begrenzt. Für komplexere Projekte empfiehlt sich daher eine Raspberry Pi 3B. Mit einem Preis von ca. 35 Euro ist sie zwar teurer, erlaubt aber den Speicherplatz variable zu vergrößern. Zusätzlich ist sie - in Verbindung mit Raspbian - ein vollständiger Stand-alone-PC und erlaubt so die Verwirklichung von hochkomplexen Steuerungen oder Algorithmen. Ein weiterer Vorteil ist ihre kompakte Größe, ihre leichte Programmierbarkeit und der niedrige Stromverbrauch. \\
+Die Pi hat den Nachteil, dass sie keine analogen Eingänge besitzt. Dies muss über einen  Analog-Digital-Konverter (ADC) kompensiert werden. \\
+Weitere Möglichkeiten wären ein Asus Tinker Board, Banana Pi, BeagleBoard oder HumminBoard. Diese bieten meist gleiche bis etwas mehr Ausstattungsmerkmale als die Pi, kosten jedoch bis zu drei Mal soviel. 
 
-\subsubsection{Sensorplatine}
 
-\subsubsection{Akku}
+\includegraphics[scale=0.25]{images/Pi.jpg}
 
-
-\subsubsection{Wheel-Encoder}
-
-\subsubsection{Distanzsensoren}
-
-\subsubsection{Gyroskop}
-
-\subsubsection{LCD}
+Die Raspberry Pi 3B+ hat einen Broadcom Chip mit 1.4Ghz, 1GB SDRAM, eingebautes Wlan und Bluetooth, ein Ethernet-Stecker, 4 USB-Ports, einen Stecker für eine Kamera, HDMI-Ausgang, einen Micro-SD Steckplatz und 40 programmierbare Pins für digitale In- und Outputs. Sie wird mit 5V betrieben. \footnote{Daten aus dem Datenhandbuch, Bild von der Offiziellen Website}\\
+Diese Spezifikationen sollten für unsere Software-Anforderungen ausreichen. 
 
 \subsubsection{Kamera}
+Die bisherige Kamera lässt sich nicht an die Pi anschließen. Daher wird Sie durch eine Raspberry-Pi Kamera ersetzt. Hierbei wird nicht die übliche Ausführung gewählt, sondern eine mit kontrollierbarem Infrarot-Filter. Durch diese Option ist es der Kamera möglich auch in völliger Dunkelheit Bilder aufzunehmen. Kameras für die Pi haben in der Regel eine Auflösung von 2592×1944 und einen manuell verstellbaren Fokus. Dies senkt die Kosten, muss aber bei der Einstellung mit bedacht werden.
+
+\subsubsection{Akku}
+Der Ct'Bot wurde von einem Akku-Pack betrieben, welcher aus zusammengeschlossenen AA-Baterien bestand. Hiervon waren 6 nötig. Dies begrenzte die Flexibilität und wird daher durch eine handelsübliche Powerbank ersetzt. Diese sollte mindestens 10.000mA haben um eine Laufzeit von 5-6 Stunden zu gewährleisten. Weiterhin ist darauf zu achten, dass sie über ein USB-Kabel angeschlossen werden kann. 
+
+\subsubsection{Wheel-Encoder}
+Die bisherigen Wheel-Encoder waren unzuverlässig. Sie wurden daher durch eine verbesserte Variante des CNY70 ersetzt. Die neuen Wheel-Encoder sind TCRT5000 Chips. Diese werden von vielen Herstellern zu geringen Preisen angeboten und ihr Messprinzip ist analog zum CNY70. Verbessert sind hierbei die Reaktion auf einen Input, hinzufügen eines digitalen Ausgangs, Distanz auf die gemessen werden kann und eine Regelbarkeit der Jump-Spannung. D.h. der benötigte Kontrast/Unterschied der Hell-Dunkel-Übergänge kann eingestellt werden. 
+
+\subsubsection{Distanzsensoren}
+Die GP2D12 werden heute noch in neuere Systeme verbaut. Es besteht kein Grund diese Auszutauschen. \\
+Der Roboter wird jedoch um Ultraschall-Distanz-Sensoren erweitert. Diese sind günstig von vielen Herstellern zu bekommen und erlauben eine Abschätzung der Distanz auf 10-60 Zentimetern. Zu beachten ist, dass die Ultraschall-Distanz-Sensoren einen sehr breiten Streubereich haben. Während die Sharp-Sensoren punkgenau messen, misst dieser Sensor eine ganze Fläche ab und erhält dabei stets die kleinste gemessene Distanz.\\
+Weiterhin problematisch ist bei Ultraschall, dass die Sensoren miteinander interferieren können. Dies tritt insbesondere dann zu tage, wenn der Roboter sich auf engstem Raum bewegt. Daher dienen diese Sensoren tatsächlich nur der Abschätzung und um die bisher unerfassten Bereiche links und rechts vom Roboter zu messen. 
+
+\subsubsection{Gyroskop}
+Die Ungenauigkeit des Kompasses macht es nötig einen Ersatz zu suchen um die Ausrichtung des Roboters zu messen. Hierfür bieten sich kostengünstige MPU6050 Sensoren an. Diese können Drehungen und Beschleunigungen an der x-,y- und z- Achse bestimmen. Ihre Genauigkeit beträgt dabei 1-2 Grad für die Drehung. Sie verfügen über ein I2C-Kommunikations-Interface und können darüber an die Pi angeschlossen werden. 
+
+\subsubsection{LCD}
+Es wird das LCD ausgetauscht gegen ein kompakteres 2 zeiliges Display. 
+
 
 \subsubsection{Grundplatte}
+Die alte Grundplatte ermöglichte leider nicht den Einbau der Pi und der Powerbank in liegender Position. Daher wurde die Grundplatte von 12 auf 15cm Durchmesser erhöht. Dadurch war auch ein verbesserter Einbau der Cliff-Sensoren und des Optical-Flow-Sensors möglich. 
+
+\subsubsection{Sensorplatine}
+Die Sensorplatte fasst alle Sensoren zusammen. Diese haben keinen Platz mehr auf dem Motherboard der Pi. Das alte Board konnte durch die Erweiterung nicht wiederverwendet werden. Daher wurde eine neue Sensorplatte entworfen und bildet nun die mittlere Schicht des Roboters. 
 
 
 % ganze Kapitel 10 Seiten max
 \section{Software-Framework}
+Ein Software-Framework sollte die einfache Bereitstellung von Funktionen bieten. Das Roboter-Framework sollte so ermöglichen, dass ein Anwender die Treiber für die Sensorik nicht selbst schreiben muss, sondern sich die benötigten Daten vom Framework bereitstellen lässt. Dies erlaubt ein schnelleres Entwickeln von Anwendungen für den fertiggestellten Roboter. 
 
 \subsection{Python}
+Das entwickelte Framework nutzt als Sprache Python. Python ist ursprünglich eine reine objekt-orientierte Skriptsprache gewesen zum Ausführen kleiner Aufgaben und Funktionen. Mit Python 2 wurde die Funktionalität der Sprache selbst so erweitert, dass sie nun die gleichen Projekte realisieren kann, welche z.B. in Java geschrieben werden. \\
+Python erlaubt schnelle, kleine Skript-Dateien miteinander zu kombinieren und ermöglicht damit größere Programme 'zusammen zu bauen'. Weiterhin lässt sich Python-Code auf allen Betriebssystemen direkt ausführen und muss nicht maschinen-bezogen programmiert werden. \\
+Python gilt auch als natürliche Sprache der Pi. Diese erlaubt die gesamte Steuerung des Rechners über Python-Skripte. Daher gibt es innerhalb der Pi-Community im Internet eine große Datenbank fertiger Skripte, welche die Programmierzeit erheblich verkürzten, da nicht mehr jede Funktionalität selbst programmiert werden muss. \\
+In diesem Projekt wird Python 2.7 verwendet, da dies hochskalierbar auf Python 3.x ist. Der Weg von 3 auf 2.7 jedoch nicht möglich ist. Damit wird die Funktionalität des Frameworks auch für ältere Pi Modelle gewahrt.
 
+ 
 \subsection{PyBot- Framework}
+Das PyBot-Framework wurde speziell für diesen Roboter entwickelt, lässt sich jedoch auf ähnliche Roboter umschreiben. \footnote{näheres im Anhang unter Installation}
+Es ist eine Sammlung von Skripten, welche die Steuerung alle nötigen Sensorik übernimmt und als Funktionen und Klassen dem Nutzer zur Verfügung stellt. 
+
 
 \subsection{Hardware Treiber}
 
@@ -216,26 +269,143 @@ In diesem Kapitel wird die vorhandene Hardware analysiert und Verbesserungspoten
 
 
 
-
-\section{Literaturverzeichnis}
-
 % ... input content via other .tex files
 %\input{content/conclusion}
 
 \appendix
 \chapter{Anhang}
-\section{Baupläne}
-\subsection{obere Platte}
+\section{Erklärung}
+Im Anhang wird der Zusammenbau des Pybots erklärt. Neben einer genauen Teileliste werden Baupläne und Instalationsanleitungen präsentiert. Dies soll den Leser dazu befähigen die Konstruktion vollständig nachbauen zu können. \\
+Die komplette Software des Python-Framework findet sich unter \url{https://github.com/Nitzsch/PyBot}. Ebenso wie eine kurze Einführung in die konkrete Nutzung der verschiedenen Module. 
+
+\chapter{Stück- und Preisliste}
+In diesem Kapitel findet sich eine vollständige Teileliste. Ebenso sind die einzelnen Bezugsquellen aufgezählt und der Preis. Dieser bezieht sich auf den Privatpersonenkauf ohne jeden Rabatt. Oft wurden 5er Packungen gekauft, da dies den Preis des einzelnen Teils enorm senkt. \\
+Nicht aufgezählt sind die Kosten für Lötzinn und Werkzeug. 
+
+\section{Vorhandene Bauteile}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Bezeichnung			&Funktion				& Preis	in Euro	&Bezugsquelle\\
+		\hline
+		L293D				&Motor-Driver-Chip		& 0.37			& vorhanden		\\
+		GD2P12				&Infrarot Distanz-Sensor& 10 (2 Mal)	& vorhanden\\
+		LCD-Display			&Anzeige				& 8				& vorhanden	\\
+		Opti-Flow-Sensor	&Mouse-Bewegungssensor		& 20			& vorhanden\\
+		Motor				& DC-Motor mit Aufhängung& 15			& vorhanden\\
+		Gummistopper		& Unterseite			& (3Mal)		& vorhanden \\
+		330Ohm Res.			&						& 0(5Mal)		& \\
+		2k Ohm Res.			&						& 0(2Mal)		& \\
+		5k Ohm Res.			&						& 0				& \\
+		\hline
+		gesammt:			&						&63.37&\\
+		\hline
+	\end{tabular}
+\end{center}
+
+
+\section{zugekaufte Sensorik}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Bezeichnung			&Funktion				& Preis	in Euro			&Bezugsquelle\\
+		\hline
+		MPU6050				&Gyro					& 1.75			& amazon		\\
+		ADS1115				&Analog-Digital-Wandler	& 3.50			& amazon		\\
+		MCP23017			&I2C-Multiplex			& 0.95			& reichelt		\\
+		Ultraschall-		&Distanzsensor			& 1.7 (3Mal)	& amazon		\\
+		TCRT5000			&Infrarot-Sensor		& 1.1 (4Mal)	& amazon		\\
+		\hline
+		gesammt:			&						&15.7			&\\
+		\hline			
+	\end{tabular}
+\end{center}
+
+\section{Raspberry Pi und Zubehör}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Bezeichnung			&Funktion				& Preis	in Euro			&Bezugsquelle\\
+		\hline
+		Raspberry Pi 		& Version 3B +			& 32.5			& reichelt		\\
+		USB-Kabel			& Stromversorgung		& 3.15			& amazon		\\
+		SanDisk Speicher	& Micro-SD, 64GB		& 15			& amazon \\
+		Powerbank			& 12kmA					& 16			& amazon \\
+		Pi-Camera			&Kamera					& 7				& amazon		\\
+		Camera Kabel		&Kabel					& 1				& amazon		\\
+		\hline
+		gesammt:			&						& 74.65				&\\
+		\hline
+	\end{tabular}
+\end{center}
+
+\section{Sonstiges Material}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Bezeichnung			&Funktion				& Preis	in Euro			&Bezugsquelle\\
+		\hline
+		Button				&						& 0				& 		\\
+		LED					&Anzeige				& 0 (2Mal)		&		\\
+		Lochrasterplatte	&Sensorboard			& 0.9			& reichelt		\\
+		4Pin Leiste			& 						& 0.2 (3 Mal)	& reichelt		\\
+		10 Pin Leiste		&						& 0.5			& reichelt		\\
+		8 Pin Leiste		&						& 0.4			& reichelt		\\
+		24Pin Dop.-Fed.-L.	&						& 0.1			& reichelt		\\
+		16Pin Dop.-Fed.-L	&						& 0.1			& reichelt		\\
+		40 Pin Header		&						& 0.6			& reichelt		\\
+		2Pin PSK-H			&						& 0.1(2Mal)		& reichelt	\\
+		2Pin PSK-H (Fem)	&						& 0.1(2Mal)		& reichelt	\\
+		3Pin PSK-H			&						& 0.2(3Mal)		& reichelt		\\
+		3Pin PSK-H (Fem)	&						& 0.2(3Mal)		& reichelt		\\
+		4 Pin PSK-H			&						& 0.2			& reichelt\\
+		4 Pin PSK-H	(Fem)	&						& 0.2			& reichelt\\
+		20 Pin PSK-H	(Fem)&						& 0.2 (2Mal)	& reichelt\\
+		8Pin PSK-H			&						& 0.3(2Mal)		& reichelt\\
+		8Pin PSK-H (Fem)	&						& 0.3(2Mal)		& reichelt\\
+		Crimp-Kontakte		& 20er Pack				& 0.3 (min 5)	& reichelt\\
+		Holzplatte, MDF 4mm	& Radius 7.5cm			& 0.5(3Mal)		& Baumarkt		\\
+		M3 Schrauben		& set mit Abstandshalter& 0(40Mal)		& amazon		\\
+		M3 Muttern			& set mit Abstandshalter& 0(20Mal)		& amazon		\\
+		Kabellitze			& 3 versch. Farben		& 0.76			& reichelt		\\
+		Kabelaufhänger		&						& 0.5(3Mal)		& reichelt		\\
+		Gummiband			&						& 0				& baumarkt\\
+		Abstandshalter 		& Kunststoff, versch. G.& 2				& amazon		\\
+		\hline
+		gesammt: 			&						&14.06			&\\
+		\hline
+	\end{tabular}
+\end{center}
+
+\section{Gesammtpreis}
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		Bezeichnung				& Preis	in Euro	\\
+		\hline
+		Sensorik				& 15.7\\
+		Raspberry Pi u. Zubehör	& 74.65\\
+		sonstige Bauteile:		& 14.06\\
+		\hline
+		gesammt:				& 104.41\\
+		\hline
+	\end{tabular}
+\end{center}
+Viele Preise beziehen sich auf die reduzierten Angebote mit 5 Bauteilen statt einem. D.h. der Preis von 104.41 Euro pro Stück wird nur realisiert, wenn 5 oder mehr gebaut werden. Ansonsten erhöht sich der Preis uU. \\
+Muss der Roboter vollständig neu gebaut werden (ohne die Basis des Ct'Bots) so erhöht sich der Preis entsprechend um 63.37 Euro auf 167.78Euro. 
+
+\chapter{Baupläne}
+\section{obere Platte}
 \includegraphics[angle=90,origin=c, scale= 0.5]{images/Zeichnung_obere_Platte.jpg}
-\subsection{Mittlere Platte}
+\section{Mittlere Platte}
 \includegraphics[angle=90,origin=c, scale= 0.7]{images/Zeichnung_mittlere_Platte.jpg}
-\subsection{Bodenplatte}
-%\includegraphics[angle=90,origin=c, scale= 0.7]{images/Zeichnung_Bodenplatte.jpg}
-\subsection{Akku-Träger}
+\section{Bodenplatte}
+\includegraphics[angle=180,origin=c, scale= 0.7]{images/Bodenplatte.pdf}
+\section{Akku-Träger}
 \includegraphics[angle=90,origin=c, scale= 0.7]{images/Zeichnung_Akku.jpg}
-\subsection{PCB-Layout}
+\section{PCB-Layout}
 \includegraphics[angle=0,origin=c, scale= 0.75]{images/Layout.png}
-\subsection{PCB-Bestückung}
+\section{PCB-Bestückung}
 \includegraphics[angle=90,origin=c, scale= 0.7]{images/PCB-Layout.jpg}
 
 \section{Pin-Belegung}
@@ -352,7 +522,7 @@ Vor und nach jeder Installation sollte im Terminal ein Update erzwungen werden. 
 
 \section{Python Bibliotheken}
 
-Für die Funktionsfähigkeit des Frameworks werden Python Bibliotheken benötigt, welche nicht in der Standartinstallation enthalten sind. Diese werden im Terminal durch den Befehl "sudo pip install (YOUR BIBLIOTHEKNAME HERE)" installiert.\\
+Für die Funktionsfähigkeit des Frameworks werden Python Bibliotheken benötigt, welche nicht in der Standartinstallation enthalten sind. Diese werden im Terminal durch den Befehl 'sudo pip install (BIBLIOTHEKNAME HERE)' installiert.\\
 Folgende Pakete werden benötigt: 
 \begin{center}
 	\begin{itemize}

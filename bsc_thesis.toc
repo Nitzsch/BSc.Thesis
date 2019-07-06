@@ -12,59 +12,66 @@
 \contentsline {section}{\numberline {2.5}Zusammenfassung}{7}
 \contentsline {chapter}{\numberline {3}Ct'Bot}{9}
 \contentsline {section}{\numberline {3.1}Erneuerung der Hardware}{9}
-\contentsline {subsection}{\numberline {3.1.1}Vorhandene Hardware}{10}
+\contentsline {subsection}{\numberline {3.1.1}Vorhandene Hardware}{9}
 \contentsline {subsubsection}{Hauptplatine}{10}
-\contentsline {subsubsection}{Wheel-Encoder und Cliff-Detektoren}{10}
-\contentsline {subsubsection}{Motor}{10}
-\contentsline {subsubsection}{Distanzsensoren}{10}
-\contentsline {subsubsection}{Kompass}{10}
-\contentsline {subsubsection}{Optical-Flow Sensor}{10}
-\contentsline {subsubsection}{LCD}{10}
-\contentsline {subsubsection}{Kamera}{10}
-\contentsline {subsubsection}{verschiedene Chips}{10}
-\contentsline {subsubsection}{Grundplatte}{10}
-\contentsline {subsection}{\numberline {3.1.2}Neue Hardware}{10}
-\contentsline {subsubsection}{Hauptplatine}{10}
-\contentsline {subsubsection}{Sensorplatine}{10}
-\contentsline {subsubsection}{Akku}{10}
-\contentsline {subsubsection}{Wheel-Encoder}{10}
-\contentsline {subsubsection}{Distanzsensoren}{10}
-\contentsline {subsubsection}{Gyroskop}{10}
-\contentsline {subsubsection}{LCD}{10}
-\contentsline {subsubsection}{Kamera}{10}
-\contentsline {subsubsection}{Grundplatte}{10}
-\contentsline {section}{\numberline {3.2}Software-Framework}{10}
-\contentsline {subsection}{\numberline {3.2.1}Python}{10}
-\contentsline {subsection}{\numberline {3.2.2}PyBot- Framework}{10}
-\contentsline {subsection}{\numberline {3.2.3}Hardware Treiber}{10}
-\contentsline {subsection}{\numberline {3.2.4}SLAM}{10}
-\contentsline {section}{\numberline {3.3}Evaluierung}{10}
-\contentsline {subsection}{\numberline {3.3.1}Testumgebung}{10}
-\contentsline {subsection}{\numberline {3.3.2}Ergebnis}{10}
-\contentsline {subsection}{\numberline {3.3.3}Diskussion und Bewertung}{10}
-\contentsline {subsection}{\numberline {3.3.4}Zusammenfassung}{10}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{11}
-\contentsline {section}{\numberline {4.1}Zusammenfassung}{11}
-\contentsline {section}{\numberline {4.2}Ausblick}{11}
-\contentsline {section}{\numberline {4.3}Literaturverzeichnis}{11}
-\contentsline {chapter}{\numberline {A}Anhang}{13}
-\contentsline {section}{\numberline {A.1}Baupl\IeC {\"a}ne}{14}
-\contentsline {subsection}{\numberline {A.1.1}obere Platte}{14}
-\contentsline {subsection}{\numberline {A.1.2}Mittlere Platte}{15}
-\contentsline {subsection}{\numberline {A.1.3}Bodenplatte}{16}
-\contentsline {subsection}{\numberline {A.1.4}Akku-Tr\IeC {\"a}ger}{16}
-\contentsline {subsection}{\numberline {A.1.5}PCB-Layout}{17}
-\contentsline {subsection}{\numberline {A.1.6}PCB-Best\IeC {\"u}ckung}{18}
-\contentsline {section}{\numberline {A.2}Pin-Belegung}{19}
-\contentsline {subsection}{\numberline {A.2.1}Pinbelegung an der Pi}{19}
-\contentsline {subsection}{\numberline {A.2.2}Pinbelegung am MCP}{20}
-\contentsline {subsection}{\numberline {A.2.3}Pinbelegung am AD-Converter}{20}
-\contentsline {chapter}{\numberline {B}Installationsanleitung}{21}
-\contentsline {section}{\numberline {B.1}Raspbian}{21}
-\contentsline {subsection}{\numberline {B.1.1}Raspbian einrichten}{21}
-\contentsline {subsection}{\numberline {B.1.2}I2C und Kamera}{22}
-\contentsline {subsection}{\numberline {B.1.3}VNC-Server}{22}
-\contentsline {subsection}{\numberline {B.1.4}WLan-Access-Point}{22}
-\contentsline {subsection}{\numberline {B.1.5}Update and Upgrade}{22}
-\contentsline {section}{\numberline {B.2}Python Bibliotheken}{22}
-\contentsline {section}{\numberline {B.3}PyBot-Framework}{23}
+\contentsline {subsubsection}{Wheel-Encoder und Cliff-Detektoren}{11}
+\contentsline {subsubsection}{Motor}{11}
+\contentsline {subsubsection}{Distanzsensoren}{11}
+\contentsline {subsubsection}{Kompass}{11}
+\contentsline {subsubsection}{Optical-Flow Sensor}{12}
+\contentsline {subsubsection}{LCD}{12}
+\contentsline {subsubsection}{Kamera}{12}
+\contentsline {subsubsection}{verschiedene Chips}{12}
+\contentsline {subsubsection}{Grundplatte}{12}
+\contentsline {subsubsection}{Fehlende Bauteile}{13}
+\contentsline {subsection}{\numberline {3.1.2}Neue Hardware}{13}
+\contentsline {subsubsection}{Hauptplatine}{13}
+\contentsline {subsubsection}{Kamera}{14}
+\contentsline {subsubsection}{Akku}{14}
+\contentsline {subsubsection}{Wheel-Encoder}{15}
+\contentsline {subsubsection}{Distanzsensoren}{15}
+\contentsline {subsubsection}{Gyroskop}{15}
+\contentsline {subsubsection}{LCD}{15}
+\contentsline {subsubsection}{Grundplatte}{15}
+\contentsline {subsubsection}{Sensorplatine}{16}
+\contentsline {section}{\numberline {3.2}Software-Framework}{16}
+\contentsline {subsection}{\numberline {3.2.1}Python}{16}
+\contentsline {subsection}{\numberline {3.2.2}PyBot- Framework}{16}
+\contentsline {subsection}{\numberline {3.2.3}Hardware Treiber}{17}
+\contentsline {subsection}{\numberline {3.2.4}SLAM}{17}
+\contentsline {section}{\numberline {3.3}Evaluierung}{17}
+\contentsline {subsection}{\numberline {3.3.1}Testumgebung}{17}
+\contentsline {subsection}{\numberline {3.3.2}Ergebnis}{17}
+\contentsline {subsection}{\numberline {3.3.3}Diskussion und Bewertung}{17}
+\contentsline {subsection}{\numberline {3.3.4}Zusammenfassung}{17}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{19}
+\contentsline {section}{\numberline {4.1}Zusammenfassung}{19}
+\contentsline {section}{\numberline {4.2}Ausblick}{19}
+\contentsline {chapter}{\numberline {A}Anhang}{21}
+\contentsline {section}{\numberline {A.1}Erkl\IeC {\"a}rung}{21}
+\contentsline {chapter}{\numberline {B}St\IeC {\"u}ck- und Preisliste}{23}
+\contentsline {section}{\numberline {B.1}Vorhandene Bauteile}{23}
+\contentsline {section}{\numberline {B.2}zugekaufte Sensorik}{23}
+\contentsline {section}{\numberline {B.3}Raspberry Pi und Zubeh\IeC {\"o}r}{24}
+\contentsline {section}{\numberline {B.4}Sonstiges Material}{24}
+\contentsline {section}{\numberline {B.5}Gesammtpreis}{25}
+\contentsline {chapter}{\numberline {C}Baupl\IeC {\"a}ne}{27}
+\contentsline {section}{\numberline {C.1}obere Platte}{28}
+\contentsline {section}{\numberline {C.2}Mittlere Platte}{29}
+\contentsline {section}{\numberline {C.3}Bodenplatte}{30}
+\contentsline {section}{\numberline {C.4}Akku-Tr\IeC {\"a}ger}{31}
+\contentsline {section}{\numberline {C.5}PCB-Layout}{32}
+\contentsline {section}{\numberline {C.6}PCB-Best\IeC {\"u}ckung}{33}
+\contentsline {section}{\numberline {C.7}Pin-Belegung}{34}
+\contentsline {subsection}{\numberline {C.7.1}Pinbelegung an der Pi}{34}
+\contentsline {subsection}{\numberline {C.7.2}Pinbelegung am MCP}{35}
+\contentsline {subsection}{\numberline {C.7.3}Pinbelegung am AD-Converter}{35}
+\contentsline {chapter}{\numberline {D}Installationsanleitung}{37}
+\contentsline {section}{\numberline {D.1}Raspbian}{37}
+\contentsline {subsection}{\numberline {D.1.1}Raspbian einrichten}{37}
+\contentsline {subsection}{\numberline {D.1.2}I2C und Kamera}{38}
+\contentsline {subsection}{\numberline {D.1.3}VNC-Server}{38}
+\contentsline {subsection}{\numberline {D.1.4}WLan-Access-Point}{38}
+\contentsline {subsection}{\numberline {D.1.5}Update and Upgrade}{38}
+\contentsline {section}{\numberline {D.2}Python Bibliotheken}{38}
+\contentsline {section}{\numberline {D.3}PyBot-Framework}{39}
