@@ -1,3 +1,39 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{McK91}
+
+\bibitem[Gor65]{Moore1965}
+Gordon.E.Moore.
+\newblock Cramming more components onto integrated circuits.
+\newblock {\em Electronics}, 38(8):114--117, apr 1965.
+
+\bibitem[Hof11]{Hofmeister2011}
+Marius Hofmeister.
+\newblock {\em Self-Localization, Mapping and Coverage with Resource-Limited
+  Mobile Robots}.
+\newblock Logos Verlag Berlin GmbH, Berlin, 2011.
+
+\bibitem[McK91]{McKerrow1991}
+Phillip~John McKerrow.
+\newblock {\em Introduction to Robotics}.
+\newblock Addison-Wesley Publishers Ltd., Sydney, 1991.
+
+\bibitem[Nor12]{RusNor2012}
+Stuart Russell;~Peter Norvig.
+\newblock {\em Kuenstliche Intelligenz}.
+\newblock Pearson Deutschland GmbH, Hallbergmoos, 2012.
+
+\bibitem[Nü12]{HeLiNue2012}
+Joachim Hertzberg; Kai Lingemann;~Andreas Nüchter.
+\newblock {\em Mobile Roboter}.
+\newblock Srpinger Vieweg Verlag, Berlin, 2012.
+
+\bibitem[Sch12]{Hering2012}
+Ekbert Hering;~Gert Schönfelder.
+\newblock {\em Sensoren in Wissenschaft und Technik}.
+\newblock Vieweg+ Teubner Verlag, Wiesbaden, 2012.
+
+\bibitem[Wir99]{MeWi1999}
+Gerhard Merzinger;~Thomas Wirth.
+\newblock {\em Repetitorium der Höheren Mathematik}.
+\newblock Binom Verlag, Springe, 1999.
 
 \end{thebibliography}

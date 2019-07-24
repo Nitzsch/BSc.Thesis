@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.4)  21 JUL 2019 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.4)  24 JUL 2019 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -579,8 +579,11 @@ Package caption Info: End \AtBeginDocument code.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+lasy on input line 69.
+Underfull \hbox (badness 10000) in paragraph at lines 66--72
+\OT1/cmr/m/it/10.95 Erneuerung des Ct'Bots und Ent-wick-lung ei-nes Software-
+ []
 
+LaTeX Font Info:    Try loading font information for U+lasy on input line 72.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [2] [3] [1] [2]
@@ -596,418 +599,471 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ]
 Kapitel 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 2469) in paragraph at lines 144--149
+\OT1/cmr/m/n/10.95 Die Be-zeich-nung au-to-nom meint hier-bei, dass die Ro-bo-t
+er ih-re Auf-ga-ben
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-[2]
+] [2]
 Kapitel 2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 179.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
-
- []
-
-[3
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 179.
+ [3
 
 ]
-Underfull \hbox (badness 1005) in paragraph at lines 185--189
-\OT1/cmr/m/n/12 vom Haupt-pro-zes-sor oder der Steue-rungs-ein-heit ab. So eig-
-net sich der
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 185--189
-\OT1/cmr/m/n/12 Windows-Variante und soll-te zu Be-ginn ein Be-trieb-sys-tem f[
-]ur Mo-bi-len
- []
-
-
-Underfull \hbox (badness 1728) in paragraph at lines 185--189
-\OT1/cmr/m/n/12 und Ver-net-zung ein-zel-ner Hardware-Komponenten ge-nutzt. Sel
--te-ner als
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--189
+Underfull \hbox (badness 10000) in paragraph at lines 192--195
 
  []
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 192.
+Underfull \hbox (badness 3482) in paragraph at lines 200--204
+\OT1/cmr/m/n/10.95 Zu die-sen Be-triebs-sys-te-men gibt es noch wei-te-re, spe-
+zia-li-sier-te Echt-Zeit-
+ []
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
- [5] [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-[8]
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
+
+ []
+
+[5] [6] [7] [8]
 Kapitel 3.
-<images/CBot_mod.jpg, id=66, 2669.975pt x 1784.6675pt>
+<images/CBot_mod.jpg, id=67, 2669.975pt x 1784.6675pt>
 File: images/CBot_mod.jpg Graphic file (type jpg)
 <use images/CBot_mod.jpg>
-Package pdftex.def Info: images/CBot_mod.jpg  used on input line 249.
+Package pdftex.def Info: images/CBot_mod.jpg  used on input line 268.
 (pdftex.def)             Requested size: 267.01314pt x 178.4772pt.
-
-Underfull \vbox (badness 4416) has occurred while \output is active []
-
- [9
+[9
 
 ]
-<images/mainboard.jpg, id=70, 2601.72pt x 1951.29pt>
+<images/mainboard.jpg, id=71, 2601.72pt x 1951.29pt>
 File: images/mainboard.jpg Graphic file (type jpg)
 <use images/mainboard.jpg>
-Package pdftex.def Info: images/mainboard.jpg  used on input line 260.
+Package pdftex.def Info: images/mainboard.jpg  used on input line 279.
 (pdftex.def)             Requested size: 260.18724pt x 195.14043pt.
-
-[10 <./images/CBot_mod.jpg>] [11 <./images/mainboard.jpg>]
-
-LaTeX Warning: Citation `Hofmeister' on page 12 undefined on input line 278.
-
-<images/adns.png, id=78, 731.73375pt x 321.2pt>
+ [10 <./images/CBot_mod.jpg>] [11 <./images/mainboard.jpg>]
+<images/adns.png, id=80, 731.73375pt x 321.2pt>
 File: images/adns.png Graphic file (type png)
 <use images/adns.png>
-Package pdftex.def Info: images/adns.png  used on input line 283.
+Package pdftex.def Info: images/adns.png  used on input line 302.
 (pdftex.def)             Requested size: 402.4548pt x 176.66054pt.
 
-Overfull \hbox (4.11623pt too wide) in paragraph at lines 283--284
+Overfull \hbox (4.11623pt too wide) in paragraph at lines 302--303
  [][] 
  []
 
+
+Underfull \hbox (badness 6094) in paragraph at lines 305--305
+[][]\OT1/cmr/m/n/9 https://media.digikey.com/pdf/Data%20Sheets/Avago%20PDFs/ADN
+S-2610.pdf, Da-tas-heet
+ []
+
 [12 <./images/adns.png>]
-<images/pybot_rechts.jpg, id=84, 1097.09875pt x 1308.89pt>
+<images/pybot_rechts.jpg, id=86, 1097.09875pt x 1308.89pt>
 File: images/pybot_rechts.jpg Graphic file (type jpg)
 <use images/pybot_rechts.jpg>
-Package pdftex.def Info: images/pybot_rechts.jpg  used on input line 309.
+Package pdftex.def Info: images/pybot_rechts.jpg  used on input line 328.
 (pdftex.def)             Requested size: 142.26378pt x 169.72229pt.
-<images/pybot_vorne.jpg, id=85, 1065.9825pt x 1292.83pt>
+<images/pybot_vorne.jpg, id=87, 1065.9825pt x 1292.83pt>
 File: images/pybot_vorne.jpg Graphic file (type jpg)
 <use images/pybot_vorne.jpg>
-Package pdftex.def Info: images/pybot_vorne.jpg  used on input line 311.
+Package pdftex.def Info: images/pybot_vorne.jpg  used on input line 330.
 (pdftex.def)             Requested size: 142.26378pt x 172.53209pt.
-<images/pybot_links.jpg, id=86, 1106.1325pt x 1284.8pt>
+<images/pybot_links.jpg, id=88, 1106.1325pt x 1284.8pt>
 File: images/pybot_links.jpg Graphic file (type jpg)
 <use images/pybot_links.jpg>
-Package pdftex.def Info: images/pybot_links.jpg  used on input line 313.
+Package pdftex.def Info: images/pybot_links.jpg  used on input line 332.
 (pdftex.def)             Requested size: 142.26378pt x 165.22626pt.
-<images/pybot_hinten.jpg, id=87, 1060.96375pt x 1284.8pt>
+<images/pybot_hinten.jpg, id=89, 1060.96375pt x 1284.8pt>
 File: images/pybot_hinten.jpg Graphic file (type jpg)
 <use images/pybot_hinten.jpg>
-Package pdftex.def Info: images/pybot_hinten.jpg  used on input line 315.
+Package pdftex.def Info: images/pybot_hinten.jpg  used on input line 334.
 (pdftex.def)             Requested size: 142.26378pt x 172.26425pt.
-
-Underfull \vbox (badness 2181) has occurred while \output is active []
-
- [13]
-[14 <./images/pybot_rechts.jpg> <./images/pybot_vorne.jpg> <./images/pybot_link
-s.jpg> <./images/pybot_hinten.jpg>]
-<images/Pi.jpg, id=94, 1282.7925pt x 909.3975pt>
+ [13] [14 <./images/pybot_rechts.jpg> <./images/pybot_vorne.jpg> <./images/pybo
+t_links.jpg> <./images/pybot_hinten.jpg>]
+<images/Pi.jpg, id=97, 1282.7925pt x 909.3975pt>
 File: images/Pi.jpg Graphic file (type jpg)
 <use images/Pi.jpg>
-Package pdftex.def Info: images/Pi.jpg  used on input line 330.
-(pdftex.def)             Requested size: 320.69734pt x 227.34882pt.
-<images/Kuman_Kamera.jpg, id=95, 1505.625pt x 1505.625pt>
+Package pdftex.def Info: images/Pi.jpg  used on input line 349.
+(pdftex.def)             Requested size: 256.55396pt x 181.87628pt.
+<images/Kuman_Kamera.jpg, id=98, 1505.625pt x 1505.625pt>
 File: images/Kuman_Kamera.jpg Graphic file (type jpg)
 <use images/Kuman_Kamera.jpg>
-Package pdftex.def Info: images/Kuman_Kamera.jpg  used on input line 341.
+Package pdftex.def Info: images/Kuman_Kamera.jpg  used on input line 360.
 (pdftex.def)             Requested size: 150.57132pt x 150.57132pt.
- [15 <./images/Pi.jpg>] [16 <./images/Kuman_Kamera.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./images/Pi.jpg>]
+Underfull \vbox (badness 6493) has occurred while \output is active []
+
+ [16 <./images/Kuman_Kamera.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
-<images/ultraschall2.jpg, id=103, 1329.96875pt x 1005.7575pt>
+<images/ultraschall2.jpg, id=106, 1329.96875pt x 1005.7575pt>
 File: images/ultraschall2.jpg Graphic file (type jpg)
 <use images/ultraschall2.jpg>
-Package pdftex.def Info: images/ultraschall2.jpg  used on input line 358.
+Package pdftex.def Info: images/ultraschall2.jpg  used on input line 377.
 (pdftex.def)             Requested size: 133.00465pt x 100.58163pt.
-[17 <./images/ultraschall2.jpg>]
-<images/sensorplatte_unbestueckt.jpg, id=107, 1438.37375pt x 1517.67pt>
+
+Overfull \hbox (29.277pt too wide) in paragraph at lines 381--381
+[][]\OT1/cmr/m/n/9 https://www.mikrocontroller.net/attachment/218122/HC-SR04[]u
+ltraschallmodul[]beschreibung[]3.pdf,
+ []
+
+
+Underfull \hbox (badness 6592) in paragraph at lines 385--385
+[][]\OT1/cmr/m/n/9 https://store.invensense.com/datasheets/invensense/MPU-6050[
+]DataSheet[]V3%204.pdf, Da-
+ []
+
+
+Underfull \vbox (badness 2951) has occurred while \output is active []
+
+ [17 <./images/ultraschall2.jpg>]
+<images/sensorplatte_unbestueckt.jpg, id=110, 1438.37375pt x 1517.67pt>
 File: images/sensorplatte_unbestueckt.jpg Graphic file (type jpg)
 <use images/sensorplatte_unbestueckt.jpg>
 Package pdftex.def Info: images/sensorplatte_unbestueckt.jpg  used on input lin
-e 378.
-(pdftex.def)             Requested size: 142.26378pt x 150.08537pt.
-<images/sensorplatte_hinten.jpg, id=108, 1558.82375pt x 1517.67pt>
+e 397.
+(pdftex.def)             Requested size: 172.5974pt x 182.11253pt.
+<images/sensorplatte_hinten.jpg, id=111, 1558.82375pt x 1517.67pt>
 File: images/sensorplatte_hinten.jpg Graphic file (type jpg)
 <use images/sensorplatte_hinten.jpg>
-Package pdftex.def Info: images/sensorplatte_hinten.jpg  used on input line 380
+Package pdftex.def Info: images/sensorplatte_hinten.jpg  used on input line 399
 .
-(pdftex.def)             Requested size: 142.26378pt x 138.5065pt.
-<images/sensorplatte_bestueckt.jpg, id=109, 1368.11125pt x 1517.67pt>
+(pdftex.def)             Requested size: 187.05078pt x 182.11253pt.
+<images/sensorplatte_bestueckt.jpg, id=112, 1368.11125pt x 1517.67pt>
 File: images/sensorplatte_bestueckt.jpg Graphic file (type jpg)
 <use images/sensorplatte_bestueckt.jpg>
 Package pdftex.def Info: images/sensorplatte_bestueckt.jpg  used on input line 
-382.
-(pdftex.def)             Requested size: 142.26378pt x 157.7969pt.
-<images/sensorplatte_verkabelt.jpg, id=110, 1659.19875pt x 1341.01pt>
+401.
+(pdftex.def)             Requested size: 164.16626pt x 182.11253pt.
+<images/sensorplatte_verkabelt.jpg, id=113, 1659.19875pt x 1341.01pt>
 File: images/sensorplatte_verkabelt.jpg Graphic file (type jpg)
 <use images/sensorplatte_verkabelt.jpg>
 Package pdftex.def Info: images/sensorplatte_verkabelt.jpg  used on input line 
-384.
-(pdftex.def)             Requested size: 142.26378pt x 114.97675pt.
+403.
+(pdftex.def)             Requested size: 199.09526pt x 160.91425pt.
  [18] [19 <./images/sensorplatte_unbestueckt.jpg> <./images/sensorplatte_hinten
 .jpg> <./images/sensorplatte_bestueckt.jpg> <./images/sensorplatte_verkabelt.jp
 g>]
-<images/Framework.png, id=117, 703.62875pt x 563.10374pt>
+<images/Framework.png, id=120, 703.62875pt x 563.10374pt>
 File: images/Framework.png Graphic file (type png)
 <use images/Framework.png>
-Package pdftex.def Info: images/Framework.png  used on input line 396.
+Package pdftex.def Info: images/Framework.png  used on input line 415.
 (pdftex.def)             Requested size: 351.8135pt x 281.55118pt.
-
-Underfull \hbox (badness 1917) in paragraph at lines 401--405
-\OT1/cmr/m/n/12 Python er-laubt klei-ne Skript-Dateien mit-ein-an-der zu kom-bi
--nie-ren und
- []
-
-[20 <./images/Framework.png>]
-<images/software.png, id=122, 1274.7625pt x 592.2125pt>
+ [20 <./images/Framework.png>]
+<images/software.png, id=125, 1274.7625pt x 592.2125pt>
 File: images/software.png Graphic file (type png)
 <use images/software.png>
-Package pdftex.def Info: images/software.png  used on input line 411.
+Package pdftex.def Info: images/software.png  used on input line 430.
 (pdftex.def)             Requested size: 637.3797pt x 296.10551pt.
 
 
-LaTeX Warning: Float too large for page by 35.01907pt on input line 413.
+LaTeX Warning: Float too large for page by 33.41908pt on input line 432.
 
 [21] [22 <./images/software.png>]
 
-LaTeX Warning: Citation `Hofmeister' on page 23 undefined on input line 428.
+LaTeX Warning: Citation `Hofmeister' on page 23 undefined on input line 447.
 
-
-Underfull \hbox (badness 1038) in paragraph at lines 425--429
-\OT1/cmr/m/n/12 Die Klas-se Map fun-giert hier-bei als In-ter-face f[]ur al-le 
-Funk-tio-na-lit[]aten
- []
-
-[23
-
-]
-<images/map1.png, id=136, 351.3125pt x 351.3125pt>
+<images/map1.png, id=134, 351.3125pt x 351.3125pt>
 File: images/map1.png Graphic file (type png)
 <use images/map1.png>
-Package pdftex.def Info: images/map1.png  used on input line 434.
+Package pdftex.def Info: images/map1.png  used on input line 453.
 (pdftex.def)             Requested size: 142.26378pt x 142.2647pt.
-<images/map2.png, id=137, 351.3125pt x 351.3125pt>
+<images/map2.png, id=135, 351.3125pt x 351.3125pt>
 File: images/map2.png Graphic file (type png)
 <use images/map2.png>
-Package pdftex.def Info: images/map2.png  used on input line 436.
+Package pdftex.def Info: images/map2.png  used on input line 455.
 (pdftex.def)             Requested size: 142.26378pt x 142.2647pt.
+<images/Map1.png, id=136, 443.6575pt x 444.66125pt>
+File: images/Map1.png Graphic file (type png)
+<use images/Map1.png>
+Package pdftex.def Info: images/Map1.png  used on input line 457.
+(pdftex.def)             Requested size: 142.26378pt x 142.57947pt.
+
+Underfull \hbox (badness 1014) in paragraph at lines 457--457
+[]\OT1/cmr/bx/n/9 (c) |\OT1/cmr/m/n/9 Ei-ne Ite-ra-ti-on mit Takt
+ []
+
+<images/Map2.png, id=137, 440.64626pt x 445.665pt>
+File: images/Map2.png Graphic file (type png)
+<use images/Map2.png>
+Package pdftex.def Info: images/Map2.png  used on input line 459.
+(pdftex.def)             Requested size: 142.26378pt x 143.88057pt.
 <images/Kreis.png, id=138, 613.29124pt x 482.80376pt>
 File: images/Kreis.png Graphic file (type png)
 <use images/Kreis.png>
-Package pdftex.def Info: images/Kreis.png  used on input line 460.
+Package pdftex.def Info: images/Kreis.png  used on input line 479.
 (pdftex.def)             Requested size: 153.32243pt x 120.70064pt.
- [24 <./images/map1.png (PNG copy)> <./images/map2.png (PNG copy)>]
-[25 <./images/Kreis.png>] [26]
+[23
+
+] [24 <./images/map1.png (PNG copy)> <./images/map2.png (PNG copy)> <./images/M
+ap1.png> <./images/Map2.png>]
+<images/View.png, id=150, 1242.6425pt x 962.59625pt>
+File: images/View.png Graphic file (type png)
+<use images/View.png>
+Package pdftex.def Info: images/View.png  used on input line 492.
+(pdftex.def)             Requested size: 559.18396pt x 433.1643pt.
+
+Overfull \hbox (34.82573pt too wide) in paragraph at lines 492--493
+ [][] 
+ []
+
+[25 <./images/Kreis.png>] [26 <./images/View.png>]
 Kapitel 4.
-<images/sharp2.png, id=150, 561.09625pt x 147.55125pt>
+<images/sharp2.png, id=159, 561.09625pt x 147.55125pt>
 File: images/sharp2.png Graphic file (type png)
 <use images/sharp2.png>
-Package pdftex.def Info: images/sharp2.png  used on input line 482.
+Package pdftex.def Info: images/sharp2.png  used on input line 509.
 (pdftex.def)             Requested size: 280.54744pt x 73.77544pt.
 [27
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 486--488
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
 
  []
 
-
-Underfull \vbox (badness 7869) has occurred while \output is active []
-
- [28 <./images/sharp2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+[28 <./images/sharp2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
  []
 
-[29] [30] [31]
+<images/map11.png, id=168, 355.3275pt x 354.32375pt>
+File: images/map11.png Graphic file (type png)
+<use images/map11.png>
+Package pdftex.def Info: images/map11.png  used on input line 536.
+(pdftex.def)             Requested size: 142.26378pt x 141.86214pt.
+<images/map12.png, id=169, 354.32375pt x 355.3275pt>
+File: images/map12.png Graphic file (type png)
+<use images/map12.png>
+Package pdftex.def Info: images/map12.png  used on input line 538.
+(pdftex.def)             Requested size: 142.26378pt x 142.67065pt.
+<images/map13.png, id=170, 353.32pt x 355.3275pt>
+File: images/map13.png Graphic file (type png)
+<use images/map13.png>
+Package pdftex.def Info: images/map13.png  used on input line 540.
+(pdftex.def)             Requested size: 142.26378pt x 143.07187pt.
+<images/Map3.png, id=171, 442.65375pt x 444.66125pt>
+File: images/Map3.png Graphic file (type png)
+<use images/Map3.png>
+Package pdftex.def Info: images/Map3.png  used on input line 542.
+(pdftex.def)             Requested size: 142.26378pt x 142.91193pt.
+[29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./images/map11.png> <./images/map12.png> <./images/map13.png> <./images/M
+ap3.png>]
+[31]
 Kapitel 5.
-[32
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32
 
 ]
+[33]
 Anhang A.
 
-Underfull \hbox (badness 2302) in paragraph at lines 528--530
-\OT1/cmr/m/n/12 Die kom-plet-te Soft-wa-re des Python-Framework fin-det sich un
--ter htt-
+Underfull \hbox (badness 10000) in paragraph at lines 575--578
+\OT1/cmr/m/n/10.95 Die kom-plet-te Soft-wa-re des Python-Framework fin-det sich
+ un-ter htt-
  []
 
-[33
+
+Underfull \hbox (badness 3219) in paragraph at lines 575--578
+\OT1/cmr/m/n/10.95 ps://github.com/Nitzsch/PyBot,[] eben-so wie ei-ne kur-ze Ei
+nf[]uhrung in die
+ []
+
+[34
 
 ]
 Anhang B.
 
-Overfull \hbox (14.24796pt too wide) in paragraph at lines 537--554
- [] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34
+ [35
 
 ]
-Overfull \hbox (18.61736pt too wide) in paragraph at lines 594--628
- [] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
-[36]
+ [36]
+[37]
 Anhang C.
-<images/Zeichnung_obere_Platte.jpg, id=184, 845.27559pt x 597.2903pt>
+<images/Zeichnung_obere_Platte.jpg, id=204, 845.27559pt x 597.2903pt>
 File: images/Zeichnung_obere_Platte.jpg Graphic file (type jpg)
 <use images/Zeichnung_obere_Platte.jpg>
 Package pdftex.def Info: images/Zeichnung_obere_Platte.jpg  used on input line 
-649.
+697.
 (pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37
+ [38
 
 ]
-Overfull \vbox (15.82602pt too high) has occurred while \output is active []
+Overfull \vbox (4.56287pt too high) has occurred while \output is active []
 
 
-[38 <./images/Zeichnung_obere_Platte.jpg>]
-<images/Zeichnung_mittlere_Platte.jpg, id=191, 845.27559pt x 597.2903pt>
+[39 <./images/Zeichnung_obere_Platte.jpg>]
+<images/Zeichnung_mittlere_Platte.jpg, id=211, 845.27559pt x 597.2903pt>
 File: images/Zeichnung_mittlere_Platte.jpg Graphic file (type jpg)
 <use images/Zeichnung_mittlere_Platte.jpg>
 Package pdftex.def Info: images/Zeichnung_mittlere_Platte.jpg  used on input li
-ne 651.
+ne 699.
 (pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
 
-Overfull \hbox (19.76178pt too wide) in paragraph at lines 651--652
+Overfull \hbox (19.76178pt too wide) in paragraph at lines 699--700
 [] 
  []
 
-<images/Bodenplatte.pdf, id=192, 580.1675pt x 827.09pt>
+<images/Bodenplatte.pdf, id=212, 580.1675pt x 827.09pt>
 File: images/Bodenplatte.pdf Graphic file (type pdf)
 <use images/Bodenplatte.pdf>
-Package pdftex.def Info: images/Bodenplatte.pdf  used on input line 653.
+Package pdftex.def Info: images/Bodenplatte.pdf  used on input line 701.
 (pdftex.def)             Requested size: 580.16606pt x 827.08797pt.
 
-Overfull \hbox (7.7759pt too wide) in paragraph at lines 653--654
+Overfull \hbox (7.7759pt too wide) in paragraph at lines 701--702
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39 <./images/Zeichnung_mittlere_Platte.jpg>]
-<images/Zeichnung_Akku.jpg, id=196, 845.27559pt x 597.2903pt>
+ [40 <./images/Zeichnung_mittlere_Platte.jpg>]
+<images/Zeichnung_Akku.jpg, id=217, 845.27559pt x 597.2903pt>
 File: images/Zeichnung_Akku.jpg Graphic file (type jpg)
 <use images/Zeichnung_Akku.jpg>
-Package pdftex.def Info: images/Zeichnung_Akku.jpg  used on input line 655.
+Package pdftex.def Info: images/Zeichnung_Akku.jpg  used on input line 703.
 (pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
 
-Overfull \hbox (19.76178pt too wide) in paragraph at lines 655--656
+Overfull \hbox (19.76178pt too wide) in paragraph at lines 703--704
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40 <./images/Bodenplatte.pdf>]
-<images/Layout.png, id=208, 642.2394pt x 644.1666pt>
+ [41 <./images/Bodenplatte.pdf>]
+<images/Layout.png, id=228, 642.2394pt x 644.1666pt>
 File: images/Layout.png Graphic file (type png)
 <use images/Layout.png>
-Package pdftex.def Info: images/Layout.png  used on input line 657.
+Package pdftex.def Info: images/Layout.png  used on input line 705.
 (pdftex.def)             Requested size: 642.23782pt x 644.16502pt.
 
-Overfull \hbox (83.33978pt too wide) in paragraph at lines 657--658
+Overfull \hbox (51.22594pt too wide) in paragraph at lines 705--706
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41 <./images/Zeichnung_Akku.jpg>]
-<images/PCB-Layout.jpg, id=212, 845.27559pt x 597.2903pt>
+ [42 <./images/Zeichnung_Akku.jpg>]
+<images/PCB-Layout.jpg, id=232, 845.27559pt x 597.2903pt>
 File: images/PCB-Layout.jpg Graphic file (type jpg)
 <use images/PCB-Layout.jpg>
-Package pdftex.def Info: images/PCB-Layout.jpg  used on input line 659.
+Package pdftex.def Info: images/PCB-Layout.jpg  used on input line 707.
 (pdftex.def)             Requested size: 845.27353pt x 597.28883pt.
 
-Overfull \hbox (19.76178pt too wide) in paragraph at lines 659--660
+Overfull \hbox (19.76178pt too wide) in paragraph at lines 707--708
 [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42 <./images/Layout.png (PNG copy)>] [43 <./images/PCB-Layout.jpg>]
+ [43 <./images/Layout.png (PNG copy)>] [44 <./images/PCB-Layout.jpg>]
 Anhang D.
+[45
 
-Overfull \hbox (13.35497pt too wide) in paragraph at lines 665--697
- [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44
-
-]
-[45] [46]
+] [46]
 Anhang E.
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--745
-\OT1/cmr/m/n/12 https://www.raspberrypi.org/downloads/raspbian/ [] her-un-ter-l
-a-den. F[]ur
+Underfull \hbox (badness 7595) in paragraph at lines 789--793
+\OT1/cmr/m/n/10.95 https://www.raspberrypi.org/downloads/raspbian/ [] her-un-te
+r-la-den. F[]ur un-
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 741--745
-\OT1/cmr/m/n/12 un-ge[]ubter User emp-fiehlt sich hier-bei die Noobs Ver-si-on,
- wel-che die
+Underfull \hbox (badness 2318) in paragraph at lines 789--793
+\OT1/cmr/m/n/10.95 ge[]ubter User emp-fiehlt sich hier-bei die Noobs Ver-si-on,
+ wel-che die neues-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--745
-\OT1/cmr/m/n/12 an https://www.raspberrypi.org/documentation/installation/insta
-lling-
+Underfull \hbox (badness 4556) in paragraph at lines 789--793
+\OT1/cmr/m/n/10.95 te Raspbi-an Ver-si-on ein-fach zur Verf[]ugung stellt. F[]u
+r ei-ne ge-naue In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--748
+Underfull \hbox (badness 4886) in paragraph at lines 789--793
+\OT1/cmr/m/n/10.95 stal-la-ti-ons-an-lei-tung emp-fiehlt sich hier das Einsteig
+er-Forum von Raspbi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--793
+\OT1/cmr/m/n/10.95 an https://www.raspberrypi.org/documentation/installation/in
+stalling-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--796
 
  []
 
-[47
+
+Underfull \vbox (badness 2057) has occurred while \output is active []
+
+ [47
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 758--761
-\OT1/cmr/m/n/12 https://www.raspberrypi.org/documentation/configuration/wireles
-s/access-
+Underfull \hbox (badness 10000) in paragraph at lines 806--809
+\OT1/cmr/m/n/10.95 https://www.raspberrypi.org/documentation/configuration/wire
+less/access-
  []
 
-[48] [49] [50
+[48]
+Underfull \hbox (badness 3179) in paragraph at lines 830--833
+\OT1/cmr/m/n/10.95 Das Herzst[]uck der Soft-wa-re ist das Python-Framework. Die
+-ses l[]asst sich
+ []
 
-] (./bsc_thesis.bbl
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+Underfull \hbox (badness 1852) in paragraph at lines 830--833
+[]\OT1/cmr/m/n/10.95 uber GitHub auf die ei-ge-ne Pi clo-nen. Die Da-ten fin-de
+t man un-ter htt-
+ []
 
-) [51
+(./bsc_thesis.bbl [49]
+Underfull \hbox (badness 1924) in paragraph at lines 9--13
+[]\OT1/cmr/m/n/10.95 Marius Hof-meis-ter.  \OT1/cmr/m/it/10.95 Self-Localizatio
+n, Map-ping and Co-ver-a-ge with
+ []
+
+) [50
 
 ] (./bsc_thesis.aux)
 
@@ -1015,29 +1071,32 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4357 strings out of 492982
- 64275 string characters out of 6134896
- 141499 words of memory out of 5000000
- 7814 multiletter control sequences out of 15000+600000
- 12178 words of font info for 47 fonts, out of 8000000 for 9000
+ 4415 strings out of 492982
+ 65177 string characters out of 6134896
+ 142565 words of memory out of 5000000
+ 7860 multiletter control sequences out of 15000+600000
+ 13730 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,49p,1947b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,49p,1193b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on bsc_thesis.pdf (60 pages, 7954794 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on bsc_thesis.pdf (59 pages, 8668757 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
+ 311 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
